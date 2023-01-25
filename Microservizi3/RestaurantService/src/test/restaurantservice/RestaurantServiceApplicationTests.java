@@ -24,9 +24,12 @@ class RestaurantServiceApplicationTests {
         Driver driver4 = Driver.builder().name("Driver4").build();
         Driver driver5 = Driver.builder().name("Driver5").build();
         Driver driver6 = Driver.builder().name("Driver6").build();
-        Restaurant provaPizza = Restaurant.builder().name("prova pizza").address("Via Roma").city("Roma").drivers(Set.of(driver1, driver2, driver3)).build();
-        Restaurant provaPizza2 = Restaurant.builder().name("prova seconda di pizza").address("Via Napoli").city("Napoli").drivers(Set.of(driver4, driver5, driver6)).build();
-        restaurantRepository.saveAll(List.of(provaPizza, provaPizza2));
+        Restaurant provaPizza = Restaurant.builder().name("prova pizza")
+                .address("Via Roma").city("Roma").drivers(Set.of(driver1, driver2, driver3)).build();
+        Restaurant provaPizza2 = Restaurant.builder().name("prova seconda di pizza")
+                .address("Via Napoli").city("Napoli").drivers(Set.of(driver4, driver5, driver6)).build();
+        restaurantRepository.
+                saveAll(List.of(provaPizza, provaPizza2));
     }
 
 }
