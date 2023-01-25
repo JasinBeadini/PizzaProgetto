@@ -2,8 +2,8 @@ package com.myrestaurant.store.pizzarestaurant.pizzaservice.controller.Impl;
 
 
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.controller.PizzaController;
-import com.myrestaurant.store.pizzarestaurant.pizzaservice.DTO.PizzaDTO;
-import com.myrestaurant.store.pizzarestaurant.pizzaservice.DTO.RestaurantIdsDTO;
+import com.myrestaurant.store.pizzarestaurant.pizzaservice.dto.PizzaDTO;
+import com.myrestaurant.store.pizzarestaurant.pizzaservice.dto.RestaurantIdsDTO;
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.mapper.PizzaMapper;
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.mapper.RestaurantIdsMapper;
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.model.Pizza;

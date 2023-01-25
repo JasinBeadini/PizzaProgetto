@@ -1,7 +1,7 @@
 package com.myrestaurant.store.pizzarestaurant.pizzaservice.service.impl;
 
 
-import com.myrestaurant.store.pizzarestaurant.pizzaservice.DAO.ToppingRepo;
+import com.myrestaurant.store.pizzarestaurant.pizzaservice.dao.ToppingRepo;
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.model.Topping;
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.service.ToppingService;
 import lombok.RequiredArgsConstructor;

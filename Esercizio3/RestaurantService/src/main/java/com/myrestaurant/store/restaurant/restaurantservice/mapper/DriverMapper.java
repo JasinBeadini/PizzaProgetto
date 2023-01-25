@@ -1,7 +1,7 @@
 package com.myrestaurant.store.restaurant.restaurantservice.mapper;
 
 
-import com.myrestaurant.store.restaurant.restaurantservice.DTO.DriverDTO;
+import com.myrestaurant.store.restaurant.restaurantservice.dto.DriverDTO;
 import com.myrestaurant.store.restaurant.restaurantservice.model.Driver;
 import org.mapstruct.Mapper;
 

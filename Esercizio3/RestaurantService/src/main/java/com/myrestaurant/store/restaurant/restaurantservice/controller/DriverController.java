@@ -1,6 +1,6 @@
 package com.myrestaurant.store.restaurant.restaurantservice.controller;
 
-import com.myrestaurant.store.restaurant.restaurantservice.DTO.DriverDTO;
+import com.myrestaurant.store.restaurant.restaurantservice.dto.DriverDTO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.PathVariable;

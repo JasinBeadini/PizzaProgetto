@@ -1,8 +1,8 @@
 package com.myrestaurant.store.restaurant.restaurantservice.service.Impl;
 
 
-import com.myrestaurant.store.restaurant.restaurantservice.DAO.RestaurantRepo;
-import com.myrestaurant.store.restaurant.restaurantservice.model.restaurant;
+import com.myrestaurant.store.restaurant.restaurantservice.dao.RestaurantRepo;
+import com.myrestaurant.store.restaurant.restaurantservice.model.Restaurant;
 import com.myrestaurant.store.restaurant.restaurantservice.service.RestaurantService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -18,12 +18,12 @@ public class RestaurantServiceImpl implements RestaurantService {
     private final RestaurantRepo restaurantRepo;
 
     @Override
-    public restaurant save(restaurant entity) {
+    public Restaurant save(Restaurant entity) {
         return restaurantRepo.save(entity);
     }
 
     @Override
-    public List<restaurant> save(List<restaurant> entities) {
+    public List<Restaurant> save(List<Restaurant> entities) {
         return restaurantRepo.saveAll(entities);
     }
 
@@ -33,18 +33,18 @@ public class RestaurantServiceImpl implements RestaurantService {
     }
 
     @Override
-    public Optional<restaurant> findById(Long id) {
+    public Optional<Restaurant> findById(Long id) {
         return restaurantRepo.findById(id);
     }
 
     @Override
-    public List<restaurant> findAll() {
+    public List<Restaurant> findAll() {
         return restaurantRepo.findAll();
     }
 
     @Override
-    public restaurant update(restaurant entity, Long id) {
-        Optional<restaurant> optional = findById(id);
+    public Restaurant update(Restaurant entity, Long id) {
+        Optional<Restaurant> optional = findById(id);
         if (optional.isPresent()) {
             return save(entity);
         }

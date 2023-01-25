@@ -1,7 +1,7 @@
 package com.myrestaurant.store.pizzarestaurant.pizzaservice.service.impl;
 
-import com.myrestaurant.store.pizzarestaurant.pizzaservice.DAO.PizzaRepo;
-import com.myrestaurant.store.pizzarestaurant.pizzaservice.DAO.RestaurantIdsRepository;
+import com.myrestaurant.store.pizzarestaurant.pizzaservice.dao.PizzaRepo;
+import com.myrestaurant.store.pizzarestaurant.pizzaservice.dao.RestaurantIdsRepository;
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.model.Pizza;
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.model.RestaurantIds;
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.service.PizzaService;

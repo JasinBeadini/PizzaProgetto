@@ -1,10 +1,10 @@
 package com.myrestaurant.store.restaurant.restaurantservice.controller.impl;
 
 import com.myrestaurant.store.restaurant.restaurantservice.controller.RestaurantController;
-import com.myrestaurant.store.restaurant.restaurantservice.DTO.RestaurantDTO;
-import com.myrestaurant.store.restaurant.restaurantservice.DTO.RestaurantIdsDTO;
+import com.myrestaurant.store.restaurant.restaurantservice.dto.RestaurantDTO;
+import com.myrestaurant.store.restaurant.restaurantservice.dto.RestaurantIdsDTO;
 import com.myrestaurant.store.restaurant.restaurantservice.mapper.RestaurantMapper;
-import com.myrestaurant.store.restaurant.restaurantservice.model.restaurant;
+import com.myrestaurant.store.restaurant.restaurantservice.model.Restaurant;
 import com.myrestaurant.store.restaurant.restaurantservice.service.RestaurantService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -46,14 +46,14 @@ public class RestaurantControllerImpl implements RestaurantController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public RestaurantDTO save(@RequestBody RestaurantDTO restaurantDTO) {
-        restaurant restaurant = restaurantMapper.asEntity(restaurantDTO);
+        Restaurant restaurant = restaurantMapper.asEntity(restaurantDTO);
         return restaurantMapper.asDTO(restaurantService.save(restaurant));
     }
 
     @Override
     @GetMapping("/{id}")
     public RestaurantDTO findById(@PathVariable Long id) {
-        restaurant restaurant = restaurantService.findById(id).orElse(null);
+        Restaurant restaurant = restaurantService.findById(id).orElse(null);
         return restaurantMapper.asDTO(restaurant);
     }
 
@@ -72,7 +72,7 @@ public class RestaurantControllerImpl implements RestaurantController {
     @Override
     @PutMapping("/{id}")
     public RestaurantDTO update(@RequestBody RestaurantDTO restaurantDTO, @PathVariable("id") Long id) {
-        restaurant restaurant = restaurantMapper.asEntity(restaurantDTO);
+        Restaurant restaurant = restaurantMapper.asEntity(restaurantDTO);
         return restaurantMapper.asDTO(restaurantService.update(restaurant, id));
     }
 }

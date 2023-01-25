@@ -2,7 +2,7 @@ package com.myrestaurant.store.pizzarestaurant.pizzaservice.controller.Impl;
 
 
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.controller.ToppingController;
-import com.myrestaurant.store.pizzarestaurant.pizzaservice.DTO.ToppingDTO;
+import com.myrestaurant.store.pizzarestaurant.pizzaservice.dto.ToppingDTO;
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.mapper.ToppingMapper;
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.model.Topping;
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.service.ToppingService;

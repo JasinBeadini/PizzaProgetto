@@ -1,8 +1,8 @@
 package com.myrestaurant.store.restaurant.restaurantservice;
 
-import com.myrestaurant.store.restaurant.restaurantservice.DAO.RestaurantRepo;
+import com.myrestaurant.store.restaurant.restaurantservice.dao.RestaurantRepo;
 import com.myrestaurant.store.restaurant.restaurantservice.model.Driver;
-import com.myrestaurant.store.restaurant.restaurantservice.model.restaurant;
+import com.myrestaurant.store.restaurant.restaurantservice.model.Restaurant;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -24,8 +24,8 @@ class RestaurantServiceApplicationTests {
         Driver driver4 = Driver.builder().name("Driver4").build();
         Driver driver5 = Driver.builder().name("Driver5").build();
         Driver driver6 = Driver.builder().name("Driver6").build();
-        restaurant vogliaDiPizza = restaurant.builder().name("Voglia di pizza").address("Via Roma").city("Roma").drivers(Set.of(driver1, driver2, driver3)).build();
-        restaurant pizzaAGoGo = restaurant.builder().name("Pizza a GoGo").address("Via Milano").city("Milano").drivers(Set.of(driver4, driver5, driver6)).build();
+        Restaurant vogliaDiPizza = Restaurant.builder().name("Voglia di pizza").address("Via Roma").city("Roma").drivers(Set.of(driver1, driver2, driver3)).build();
+        Restaurant pizzaAGoGo = Restaurant.builder().name("Pizza a GoGo").address("Via Milano").city("Milano").drivers(Set.of(driver4, driver5, driver6)).build();
         restaurantRepo.saveAll(List.of(vogliaDiPizza, pizzaAGoGo));
     }
 }

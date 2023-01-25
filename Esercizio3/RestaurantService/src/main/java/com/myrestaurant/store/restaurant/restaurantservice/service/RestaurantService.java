@@ -1,8 +1,8 @@
 package com.myrestaurant.store.restaurant.restaurantservice.service;
 
 
-import com.myrestaurant.store.restaurant.restaurantservice.model.restaurant;
+import com.myrestaurant.store.restaurant.restaurantservice.model.Restaurant;
 
-public interface RestaurantService extends GenericService<restaurant, Long> {
+public interface RestaurantService extends GenericService<Restaurant, Long> {
 
 }

@@ -1,6 +1,6 @@
 package com.myrestaurant.store.restaurant.restaurantservice.service.Impl;
 
-import com.myrestaurant.store.restaurant.restaurantservice.DAO.DriverRepo;
+import com.myrestaurant.store.restaurant.restaurantservice.dao.DriverRepo;
 import com.myrestaurant.store.restaurant.restaurantservice.model.Driver;
 import com.myrestaurant.store.restaurant.restaurantservice.service.DriverService;
 import lombok.RequiredArgsConstructor;

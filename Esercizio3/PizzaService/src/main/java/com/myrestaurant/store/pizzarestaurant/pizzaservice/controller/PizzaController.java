@@ -1,8 +1,8 @@
 package com.myrestaurant.store.pizzarestaurant.pizzaservice.controller;
 
 
-import com.myrestaurant.store.pizzarestaurant.pizzaservice.DTO.PizzaDTO;
-import com.myrestaurant.store.pizzarestaurant.pizzaservice.DTO.RestaurantIdsDTO;
+import com.myrestaurant.store.pizzarestaurant.pizzaservice.dto.PizzaDTO;
+import com.myrestaurant.store.pizzarestaurant.pizzaservice.dto.RestaurantIdsDTO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.PathVariable;

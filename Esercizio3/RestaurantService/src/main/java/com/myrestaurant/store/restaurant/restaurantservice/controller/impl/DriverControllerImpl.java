@@ -2,7 +2,7 @@ package com.myrestaurant.store.restaurant.restaurantservice.controller.impl;
 
 
 import com.myrestaurant.store.restaurant.restaurantservice.controller.DriverController;
-import com.myrestaurant.store.restaurant.restaurantservice.DTO.DriverDTO;
+import com.myrestaurant.store.restaurant.restaurantservice.dto.DriverDTO;
 import com.myrestaurant.store.restaurant.restaurantservice.mapper.DriverMapper;
 import com.myrestaurant.store.restaurant.restaurantservice.model.Driver;
 import com.myrestaurant.store.restaurant.restaurantservice.service.DriverService;

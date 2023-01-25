@@ -1,6 +1,6 @@
 package com.myrestaurant.store.pizzarestaurant.pizzaservice;
 
-import com.myrestaurant.store.pizzarestaurant.pizzaservice.DAO.PizzaRepo;
+import com.myrestaurant.store.pizzarestaurant.pizzaservice.dao.PizzaRepo;
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.model.Pizza;
 import com.myrestaurant.store.pizzarestaurant.pizzaservice.model.Topping;
 import org.junit.jupiter.api.Test;
