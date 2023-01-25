@@ -8,6 +8,7 @@ public interface GenericMapper <E, D> {
 
     D asDTO(E entity);
 
+
     List<E> asEntityList(List<D> dtoList);
 
     List<D> asDTOList(List<E> entityList);
